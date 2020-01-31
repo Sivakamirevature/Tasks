@@ -1,0 +1,1 @@
+select members.member_name, members.member_id,members.address,members.mobile_number, (select gender.type from gender where members.gender=gender.id) from members where members.member_id=(select movie_history.member_id from movie_history where movie_history.movie_id=(select movies.movie_id from movies where movies.movie_name="Dharbar"));

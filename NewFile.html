@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+<style>
+   
+body {
+	background-image: url("C:/Users/Training/Desktop/images.jpg");
+        background-repeat:no-repeat;
+       background-size:cover;
+} 
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  
+}
+td{
+    width: 200;
+    height: 50;
+}
+
+button{
+margin: -10%;
+
+}
+</style>
+<script src="MyFirstJS.js"></script>
+    </head>
+    <body> 
+        <form>
+       <div id="firstdiv">
+    <center>
+        <h1 style="color:black">Sample Application Form</h1>
+        <p>The Application is just for knowing you only... So kindly fill up you details for familiar with us... :-)</p>
+        <center><table >
+            <tr>
+                <td>Name</td><td><input type="text" name="aname" id="n"/></td>
+            </tr>
+             <tr>
+               <td>Password</td><td><input type="password" name="npassword" id="ipassword"/><input type="button" onclick="myFunction()" value="show"></td>
+               
+            </tr>
+            
+            <tr>
+                <td>Date of Birth</td><td><input type="date" name="dob" id="idob"/></td>
+            </tr>
+            <tr>
+                <td>Age</td><td><input type="number" name="age" id="iage"/></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Gender</td><center><td><input type="radio" name ="gender" id="male" value="Male" onclick="passingFunction(this.value)"/>Male</td></center>
+            </tr>
+            <tr>
+            <center><td><input type="radio" name ="gender" id="female" value="female" onclick="passingFunction(this.value)"/>Female</td></center>
+            </tr>
+            <tr>
+                <td>Qualification</td><td><input type="checkbox" name="qualification" id="qualification1" value="SSLC" />SSLC<input type="checkbox" name="qualication" id="qualification2" value="HSC" />HSC<input type="checkbox" name="qualication" id="qualification3" value="Diploma"/>Diploma<input type="checkbox" name="qualication" id="qualification4" value="UG"/>UG<input type="checkbox" name="qualication" id="qualification5" value="PG"/>PG</td> 
+            </tr>
+            <tr>
+                <td>email ID</td><td><input type="email" name="email" id="iemail"/></td>
+            </tr>
+             <tr>
+                <td>Contact Number</td><td><input type="text" name="c_num" id="ic_num"/></td>
+            </tr>
+            
+            <tr>
+                <td>Which Color do you Like?</td><td><input type="color" name="color" id="icolour"/></td>
+            </tr>
+            <tr>
+                <td>Father's Name</td><td><input type="text" name="faname" id="ifname"/></td>
+            </tr>
+            <tr>
+                <td>Mother's Name</td><td><input type="text" name="mname" id="imname"/></td>
+            </tr>
+            <tr>
+                <td>Native Place</td><td><input type="text" name="xnative" id="inative"/></td>
+            </tr>
+            <tr>
+                <td>Current Address</td><td><textarea rows="4" cols="40" name='xaddress' id='iaddress'></textarea></td>
+            </tr>
+            <tr>
+                <td>Upload Your Photo</td><td><input type="file" name="photo" id="iphoto"/></td>
+            </tr>
+
+            </table>
+            <center><br><input type="button" name="submit" value="Done" onclick="hideForm()"/></center>
+            </center> 
+    </center></div>
+            </form>
+           <center> <h1>Summary of the Application Form</h1><br><table border=3>
+            <tr><td id='frfc'>Name</td><td id = 'frsc'></td></tr>
+            <tr><td id='srfc'>Date of Birth</td><td id = 'srsc'></td></tr>
+            <tr><td id='trfc'>Age</td><td id = 'trsc'></td></tr>
+            <tr><td id='forfc'>Gender</td><td id = 'forsc'></td></tr>
+            <tr><td id='firfc'>email ID</td><td id = 'firsc'></td></tr>
+            <tr><td id='srfc'>Contact Number</td><td id = 'sirsc'></td></tr>
+            <tr><td id='serfc'>colour</td><td id = 'sersc'></td></tr>
+            <tr><td id='erfc'>Address</td><td id = 'ersc'></td></tr>
+            <tr><td id='nrfc'>Photo</td><td id = 'nrsc'></td></tr>
+            <tr><td id='terfc'>Qualication</td><td id = 'tersc'></td></tr>
+            </table></center>
+            
+                 </body>
+</html>
