@@ -49,6 +49,7 @@ CREATE TABLE `quizzes` (
   `created_by` varchar(45) NOT NULL,
   `modified_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `modified_by` varchar(45) DEFAULT NULL,
+  'modified_count' int,
   `category_id` int(10) unsigned NOT NULL,
   `level_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`quiz_id`),
